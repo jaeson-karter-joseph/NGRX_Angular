@@ -1,0 +1,16 @@
+<div class="auth-page">
+    <div class="container page">
+        <div class="row">
+            <div class="col-md offset-md-3 col-xs-12">
+
+            </div>
+        </div>
+    </div>
+</div>
+BACKEND ERROR HERE
+
+
+<ng-container *ngIf="data$ | async as data">
+    <app-backend-error-messages *ngIf="data.backendError"
+        [backendErrors]="data.backendError"></app-backend-error-messages>
+</ng-container>
